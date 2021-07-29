@@ -1,0 +1,169 @@
+:root { /*Variáveis*/
+    --vermelho: #e50914;
+    --preta: rgb(20, 20, 20);
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Menu e body*/
+
+body {
+    background: var(--preta) ;
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+}
+
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 60px;
+   
+}
+
+header .logo{
+    color: var(--vermelho);
+    font-family: 'Arial Black', times;
+    font-size: 26px;
+    
+    
+}
+
+header nav a {
+    text-decoration: none;
+    color: #AAA;
+    margin-right: 20px;
+}
+
+header nav a:hover {
+    color:white ;
+    transition: 0.5s;
+    font-weight: 600;
+}
+
+.pesquisa {
+    border: none;
+background-color: var(--preta);
+}
+
+
+header i{
+    color: white;
+    font-size: 20px;
+    background-color: var(--preta);
+    border: none;
+    cursor: pointer;
+    margin: 0 20px;
+}
+
+.menu-direita a {
+    color: #AAA;
+    text-decoration: none;
+
+}
+
+.menu-direita a:hover {
+    color:white ;
+    transition: 0.5s;
+    font-weight: 600;
+}
+
+ .menu-direita {
+     margin-right: 40px;
+ }
+/*Filme principal - Impuros*/
+
+.filme-principal {
+    font-size: 16px;
+    background: linear-gradient(rgba(0, 10, 0, .30), rgba(0, 0, 0, .30)100%), url(/imagem/foto-capa.jpg);
+    height: 600px;
+    background-size:cover;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start; /*começar na esquerda*/
+    
+}
+
+.filme-principal .container h2 {
+    font-family: 'arial black';
+    margin-bottom: 20px;
+    margin-top: 50%;
+
+}
+
+.filme-principal .descricao {
+    margin-bottom: 70px ;
+
+   font-family: sans-serif;
+   font-weight: 600;
+}
+
+.botoes .botao {
+    background-color: rgba(0, 0,0 , .50);
+    border: none;
+    color: white;
+    padding: 15px 30px;
+    margin-right: 15px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.botao:nth-child(1){
+    background-color: white;
+    color: black;
+}
+.botao:hover {
+    background-color: white;
+    color: black;
+    transition: .6s ease all;
+}
+
+.botao i {
+    margin-right: 8px;
+    font-size: 18px;
+}
+
+.container {
+    margin-left: 50px;
+}
+
+.filme-principal .container {
+    width: 38%;
+}
+
+
+
+/*Seção de filmes*/
+
+.rolagem {
+    margin: 0 10%;
+}
+
+.assistir-novamente {
+    margin-bottom: 80px;
+}
+.assistir-novamente h2 {
+    margin-left: 2%;
+    margin-top: 80px;
+    margin-bottom: 20px;
+}
+
+.top-filmes h2 {
+margin-left: 2%;
+margin-bottom: 20px;
+}
+
+.box-filme {
+    height: 300px;
+    width: 300px;
+    margin: 0 20px;
+
+}
+
